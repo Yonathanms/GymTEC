@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymTEC.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ce837b37c55436ad813a8ccc753057dd132dd48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f42f29c402dd8fb9754904ceac77416db51267ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymTEC.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymTEC.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -66,6 +66,129 @@ namespace GymTEC.API.Migrations
 
                     b.ToTable("Branches");
                 });
+
+            modelBuilder.Entity("GymTEC.API.Models.Cliente", b =>
+                {
+                    b.Property<string>("NumCedula")
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("IMC")
+                        .HasColumnType("decimal(4,2)");
+
+                    b.Property<decimal>("Peso")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.HasKey("NumCedula");
+
+                    b.ToTable("Cliente");
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.Persona", b =>
+                {
+                    b.Property<string>("NumCedula")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Apellido1")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Apellido2")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Canton")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("CorreoElectronico")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Distrito")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("FechaNacimiento")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Provincia")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("NumCedula");
+
+                    b.ToTable("Personas");
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.PersonaxRol", b =>
+                {
+                    b.Property<string>("NumCedula")
+                        .HasColumnType("text");
+
+                    b.Property<int>("IdRol")
+                        .HasColumnType("integer");
+
+                    b.HasKey("NumCedula", "IdRol");
+
+                    b.HasIndex("IdRol");
+
+                    b.ToTable("PersonaxRol");
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.Rol", b =>
+                {
+                    b.Property<int>("IdRol")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdRol"));
+
+                    b.Property<string>("NombreRol")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("IdRol");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.Cliente", b =>
+                {
+                    b.HasOne("GymTEC.API.Models.Persona", "Persona")
+                        .WithOne()
+                        .HasForeignKey("GymTEC.API.Models.Cliente", "NumCedula")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Persona");
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.PersonaxRol", b =>
+                {
+                    b.HasOne("GymTEC.API.Models.Rol", "Rol")
+                        .WithMany()
+                        .HasForeignKey("IdRol")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GymTEC.API.Models.Persona", "Persona")
+                        .WithMany()
+                        .HasForeignKey("NumCedula")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Persona");
+
+                    b.Navigation("Rol");
+                });
 #pragma warning restore 612, 618
         }
     }

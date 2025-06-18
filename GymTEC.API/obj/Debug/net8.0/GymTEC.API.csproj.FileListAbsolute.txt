@@ -265,3 +265,8 @@ C:\Users\Yonathan Monge\Desktop\Proyectos programación\GymTEC\GymTEC.API\bin\De
 C:\Users\Yonathan Monge\Desktop\Proyectos programación\GymTEC\GymTEC.API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Yonathan Monge\Desktop\Proyectos programación\GymTEC\GymTEC.API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Yonathan Monge\Desktop\Proyectos programación\GymTEC\GymTEC.API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Yonathan Monge\Desktop\Proyectos programación\GymTEC\GymTEC.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Yonathan Monge\Desktop\Proyectos programación\GymTEC\GymTEC.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Yonathan Monge\Desktop\Proyectos programación\GymTEC\GymTEC.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Yonathan Monge\Desktop\Proyectos programación\GymTEC\GymTEC.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Yonathan Monge\Desktop\Proyectos programación\GymTEC\GymTEC.API\obj\Debug\net8.0\GymTEC.API.MvcApplicationPartsAssemblyInfo.cs
