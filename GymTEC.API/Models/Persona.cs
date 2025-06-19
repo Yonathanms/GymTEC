@@ -19,7 +19,7 @@ namespace GymTEC.API.Models
         public string Apellido2 { get; set; } // Segundo apellido de la persona
 
         [Required]
-        public DateTime FechaNacimiento { get; set; } // Fecha de nacimiento de la persona
+        public DateOnly FechaNacimiento { get; set; } // Fecha de nacimiento de la persona
 
         [Required]
         public string Provincia { get; set; } // Provincia de residencia

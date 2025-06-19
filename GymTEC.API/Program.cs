@@ -3,6 +3,19 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Habilitar CORS para permitir solicitudes desde el frontend
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactAPP",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:53503") // URL de la aplicación frontend
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials(); // Permitir credenciales si es necesario
+        });
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer(); // Swagger
@@ -19,6 +32,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Configurar CORS antes de los MapControllers
+app.UseCors("AllowReactAPP");
 
 app.UseHttpsRedirection();
 

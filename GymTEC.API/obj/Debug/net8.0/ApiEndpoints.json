@@ -327,6 +327,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "GymTEC.API.Controllers.PersonasxRolesController",
+    "Method": "GetPersonaxRol",
+    "RelativePath": "api/PersonasxRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GymTEC.API.Models.PersonaxRol, GymTEC.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.PersonasxRolesController",
+    "Method": "PostPersonaxRol",
+    "RelativePath": "api/PersonasxRoles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaxRol",
+        "Type": "GymTEC.API.Models.PersonaxRol",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymTEC.API.Models.PersonaxRol",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.PersonasxRolesController",
+    "Method": "GetPersonaxRol",
+    "RelativePath": "api/PersonasxRoles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymTEC.API.Models.PersonaxRol",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.PersonasxRolesController",
+    "Method": "PutPersonaxRol",
+    "RelativePath": "api/PersonasxRoles/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "personaxRol",
+        "Type": "GymTEC.API.Models.PersonaxRol",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.PersonasxRolesController",
+    "Method": "DeletePersonaxRol",
+    "RelativePath": "api/PersonasxRoles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GymTEC.API.Controllers.RolesController",
     "Method": "GetRoles",
     "RelativePath": "api/Roles",
