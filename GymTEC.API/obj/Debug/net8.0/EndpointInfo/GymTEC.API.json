@@ -5,6 +5,188 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Administradores": {
+      "get": {
+        "tags": [
+          "Administradores"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Administrador"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Administrador"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Administrador"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Administradores"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Administrador"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Administrador"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Administrador"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Administradores/{id}": {
+      "get": {
+        "tags": [
+          "Administradores"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Administrador"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Administrador"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Administrador"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Administradores"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Administradores"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Autentificacion/Login": {
       "post": {
         "tags": [
@@ -49,191 +231,6 @@
                 }
               }
             }
-          }
-        }
-      }
-    },
-    "/api/Branches": {
-      "get": {
-        "tags": [
-          "Branches"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Branch"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Branch"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Branch"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Branches"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Branch"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Branch"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Branch"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Branch"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Branch"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Branch"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Branches/{id}": {
-      "get": {
-        "tags": [
-          "Branches"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Branch"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Branch"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Branch"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Branches"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Branch"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Branch"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Branch"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Branches"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
           }
         }
       }
@@ -784,6 +781,99 @@
         }
       }
     },
+    "/api/RegistroAdministrador": {
+      "post": {
+        "tags": [
+          "RegistroAdministrador"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAdministradorRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAdministradorRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAdministradorRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/RegistroCliente": {
+      "post": {
+        "tags": [
+          "RegistroCliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroClienteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroClienteRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroClienteRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/RegistroSucursal": {
+      "post": {
+        "tags": [
+          "RegistroSucursal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroSucursalRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroSucursalRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroSucursalRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Roles": {
       "get": {
         "tags": [
@@ -968,56 +1058,225 @@
           }
         }
       }
+    },
+    "/api/Sucursales": {
+      "get": {
+        "tags": [
+          "Sucursales"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Sucursal"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Sucursal"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Sucursal"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Sucursales"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sucursal"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sucursal"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sucursal"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Sucursal"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Sucursal"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Sucursal"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Sucursales/{id}": {
+      "get": {
+        "tags": [
+          "Sucursales"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Sucursal"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Sucursal"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Sucursal"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Sucursales"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sucursal"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sucursal"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sucursal"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Sucursales"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
-      "Branch": {
+      "Administrador": {
         "required": [
-          "canton",
-          "district",
-          "name",
-          "province"
+          "numCedula",
+          "salario",
+          "tipoPlanilla"
         ],
         "type": "object",
         "properties": {
-          "id": {
+          "numCedula": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "idSucursal": {
             "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "province": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "canton": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "district": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "openingDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "phoneNumber": {
-            "type": "string",
+            "format": "int32",
             "nullable": true
           },
-          "maxCapacity": {
+          "tipoPlanilla": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "salario": {
             "type": "integer",
             "format": "int32"
           },
-          "spaEnabled": {
-            "type": "boolean"
+          "persona": {
+            "$ref": "#/components/schemas/Persona"
           },
-          "storeEnabled": {
-            "type": "boolean"
+          "sucursal": {
+            "$ref": "#/components/schemas/Sucursal"
           }
         },
         "additionalProperties": false
@@ -1160,6 +1419,191 @@
         },
         "additionalProperties": false
       },
+      "RegistroAdministradorRequest": {
+        "required": [
+          "apellido1",
+          "apellido2",
+          "canton",
+          "correoElectronico",
+          "distrito",
+          "fechaNacimiento",
+          "nombre",
+          "numCedula",
+          "password",
+          "provincia",
+          "salario",
+          "tipoPlanilla"
+        ],
+        "type": "object",
+        "properties": {
+          "numCedula": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "apellido1": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "apellido2": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "fechaNacimiento": {
+            "type": "string",
+            "format": "date"
+          },
+          "provincia": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "canton": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "distrito": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "correoElectronico": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "idSucursal": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tipoPlanilla": {
+            "minLength": 1,
+            "pattern": "^(Mensual|Xhora|Xclase)$",
+            "type": "string"
+          },
+          "salario": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistroClienteRequest": {
+        "type": "object",
+        "properties": {
+          "numCedula": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido1": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido2": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNacimiento": {
+            "type": "string",
+            "format": "date"
+          },
+          "provincia": {
+            "type": "string",
+            "nullable": true
+          },
+          "canton": {
+            "type": "string",
+            "nullable": true
+          },
+          "distrito": {
+            "type": "string",
+            "nullable": true
+          },
+          "correoElectronico": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "peso": {
+            "type": "number",
+            "format": "double"
+          },
+          "imc": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistroSucursalRequest": {
+        "required": [
+          "canton",
+          "distrito",
+          "maxCapacity",
+          "nombreSucursal",
+          "numCedulaAdministrador",
+          "openingDate",
+          "provincia",
+          "spaEnabled",
+          "storeEnabled",
+          "telefono"
+        ],
+        "type": "object",
+        "properties": {
+          "nombreSucursal": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "provincia": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "canton": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "distrito": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "openingDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "telefono": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxCapacity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "spaEnabled": {
+            "type": "boolean"
+          },
+          "storeEnabled": {
+            "type": "boolean"
+          },
+          "numCedulaAdministrador": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
       "Rol": {
         "required": [
           "nombreRol"
@@ -1173,6 +1617,60 @@
           "nombreRol": {
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Sucursal": {
+        "required": [
+          "canton",
+          "distrito",
+          "nombreSucursal",
+          "openingDate",
+          "provincia"
+        ],
+        "type": "object",
+        "properties": {
+          "idSucursal": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreSucursal": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "provincia": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "canton": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "distrito": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "openingDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "maxCapacity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "spaEnabled": {
+            "type": "boolean"
+          },
+          "storeEnabled": {
+            "type": "boolean"
+          },
+          "administrador": {
+            "$ref": "#/components/schemas/Administrador"
           }
         },
         "additionalProperties": false

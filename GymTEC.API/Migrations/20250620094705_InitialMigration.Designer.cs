@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GymTEC.API.Migrations
 {
     [DbContext(typeof(GymTECDbContext))]
-    [Migration("20250618102639_PersonaxRolTabla")]
-    partial class PersonaxRolTabla
+    [Migration("20250620094705_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,49 +25,27 @@ namespace GymTEC.API.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("GymTEC.API.Models.Branch", b =>
+            modelBuilder.Entity("GymTEC.API.Models.Administrador", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<string>("NumCedula")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("IdSucursal")
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Canton")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("District")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("MaxCapacity")
+                    b.Property<int>("Salario")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("TipoPlanilla")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("OpeningDate")
-                        .HasColumnType("timestamp with time zone");
+                    b.HasKey("NumCedula");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.HasIndex("IdSucursal")
+                        .IsUnique();
 
-                    b.Property<string>("Province")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<bool>("SpaEnabled")
-                        .HasColumnType("boolean");
-
-                    b.Property<bool>("StoreEnabled")
-                        .HasColumnType("boolean");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Branches");
+                    b.ToTable("Administrador");
                 });
 
             modelBuilder.Entity("GymTEC.API.Models.Cliente", b =>
@@ -111,8 +89,8 @@ namespace GymTEC.API.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("FechaNacimiento")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("FechaNacimiento")
+                        .HasColumnType("date");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -163,6 +141,68 @@ namespace GymTEC.API.Migrations
                     b.ToTable("Roles");
                 });
 
+            modelBuilder.Entity("GymTEC.API.Models.Sucursal", b =>
+                {
+                    b.Property<int>("IdSucursal")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdSucursal"));
+
+                    b.Property<string>("Canton")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Distrito")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("MaxCapacity")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("NombreSucursal")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateOnly>("OpeningDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Provincia")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("SpaEnabled")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("StoreEnabled")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("IdSucursal");
+
+                    b.ToTable("Sucursal");
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.Administrador", b =>
+                {
+                    b.HasOne("GymTEC.API.Models.Sucursal", "Sucursal")
+                        .WithOne("Administrador")
+                        .HasForeignKey("GymTEC.API.Models.Administrador", "IdSucursal");
+
+                    b.HasOne("GymTEC.API.Models.Persona", "Persona")
+                        .WithMany()
+                        .HasForeignKey("NumCedula")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Persona");
+
+                    b.Navigation("Sucursal");
+                });
+
             modelBuilder.Entity("GymTEC.API.Models.Cliente", b =>
                 {
                     b.HasOne("GymTEC.API.Models.Persona", "Persona")
@@ -191,6 +231,12 @@ namespace GymTEC.API.Migrations
                     b.Navigation("Persona");
 
                     b.Navigation("Rol");
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.Sucursal", b =>
+                {
+                    b.Navigation("Administrador")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

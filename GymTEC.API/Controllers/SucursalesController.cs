@@ -12,47 +12,47 @@ namespace GymTEC.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BranchesController : ControllerBase
+    public class SucursalesController : ControllerBase
     {
         private readonly GymTECDbContext _context;
 
-        public BranchesController(GymTECDbContext context)
+        public SucursalesController(GymTECDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Branches
+        // GET: api/Sucursales
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Branch>>> GetBranches()
+        public async Task<ActionResult<IEnumerable<Sucursal>>> GetBranches()
         {
-            return await _context.Branches.ToListAsync();
+            return await _context.Sucursal.ToListAsync();
         }
 
-        // GET: api/Branches/5
+        // GET: api/Sucursales/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Branch>> GetBranch(int id)
+        public async Task<ActionResult<Sucursal>> GetSucursal(int id)
         {
-            var branch = await _context.Branches.FindAsync(id);
+            var sucursal = await _context.Sucursal.FindAsync(id);
 
-            if (branch == null)
+            if (sucursal == null)
             {
                 return NotFound();
             }
 
-            return branch;
+            return sucursal;
         }
 
-        // PUT: api/Branches/5
+        // PUT: api/Sucursales/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutBranch(int id, Branch branch)
+        public async Task<IActionResult> PutSucursal(int id, Sucursal sucursal)
         {
-            if (id != branch.Id)
+            if (id != sucursal.IdSucursal)
             {
                 return BadRequest();
             }
 
-            _context.Entry(branch).State = EntityState.Modified;
+            _context.Entry(sucursal).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace GymTEC.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!BranchExists(id))
+                if (!SucursalExists(id))
                 {
                     return NotFound();
                 }
@@ -73,36 +73,36 @@ namespace GymTEC.API.Controllers
             return NoContent();
         }
 
-        // POST: api/Branches
+        // POST: api/Sucursales
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Branch>> PostBranch(Branch branch)
+        public async Task<ActionResult<Sucursal>> PostSucursal(Sucursal sucursal)
         {
-            _context.Branches.Add(branch);
+            _context.Sucursal.Add(sucursal);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetBranch", new { id = branch.Id }, branch);
+            return CreatedAtAction("GetSucursal", new { id = sucursal.IdSucursal }, sucursal);
         }
 
-        // DELETE: api/Branches/5
+        // DELETE: api/Sucursales/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBranch(int id)
+        public async Task<IActionResult> DeleteSucursal(int id)
         {
-            var branch = await _context.Branches.FindAsync(id);
-            if (branch == null)
+            var sucursal = await _context.Sucursal.FindAsync(id);
+            if (sucursal == null)
             {
                 return NotFound();
             }
 
-            _context.Branches.Remove(branch);
+            _context.Sucursal.Remove(sucursal);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool BranchExists(int id)
+        private bool SucursalExists(int id)
         {
-            return _context.Branches.Any(e => e.Id == id);
+            return _context.Sucursal.Any(e => e.IdSucursal == id);
         }
     }
 }

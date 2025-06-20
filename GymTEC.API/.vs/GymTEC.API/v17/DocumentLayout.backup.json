@@ -3,24 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\autentificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\autentificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\data\\gymtecdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:data\\gymtecdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\models\\personaxrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:models\\personaxrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\registrosucursalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\registrosucursalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\dtos\\registrosucursalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:dtos\\registrosucursalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\models\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:models\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\models\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:models\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\sucursalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\sucursalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\migrations\\gymtecdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:migrations\\gymtecdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\models\\personaxrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:models\\personaxrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\data\\gymtecdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:data\\gymtecdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\dtos\\registroclienterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:dtos\\registroclienterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\dtos\\registroadministradorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:dtos\\registroadministradorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\dtos\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,33 +63,69 @@
       "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E297AF3A-E6C5-ECE3-3EA3-8C9171C03A8A}|..\\GymTEC.APP\\gymtec.app.esproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.app\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\registroclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\registroclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E297AF3A-E6C5-ECE3-3EA3-8C9171C03A8A}|..\\GymTEC.APP\\gymtec.app.esproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.app\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\registroadministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\registroadministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\personasxrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\personasxrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\autentificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\autentificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\controllers\\administradorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:controllers\\administradorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\20250620074243_TablaAdminv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250620074243_TablaAdminv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\20250620063205_TablaAdmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250620063205_TablaAdmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\20250620062546_TablaAdmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250620062546_TablaAdmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E297AF3A-E6C5-ECE3-3EA3-8C9171C03A8A}|..\\GymTEC.APP\\gymtec.app.esproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.app\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E297AF3A-E6C5-ECE3-3EA3-8C9171C03A8A}|..\\GymTEC.APP\\gymtec.app.esproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.app\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E297AF3A-E6C5-ECE3-3EA3-8C9171C03A8A}|..\\GymTEC.APP\\gymtec.app.esproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.app\\src\\assets\\react.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E297AF3A-E6C5-ECE3-3EA3-8C9171C03A8A}|..\\GymTEC.APP\\gymtec.app.esproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.app\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E297AF3A-E6C5-ECE3-3EA3-8C9171C03A8A}|..\\GymTEC.APP\\gymtec.app.esproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.app\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|c:\\users\\yonathan monge\\desktop\\proyectos programaci\u00F3n\\gymtec\\gymtec.api\\migrations\\gymtecdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48561F72-4474-4E4D-8841-37FC006935BB}|GymTEC.API.csproj|solutionrelative:migrations\\gymtecdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,11 +135,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Rol.cs",
               "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Rol.cs",
               "RelativeDocumentMoniker": "Models\\Rol.cs",
@@ -79,150 +147,137 @@
               "RelativeToolTip": "Models\\Rol.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T08:02:05.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonaxRol.cs",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\PersonaxRol.cs",
-              "RelativeDocumentMoniker": "Models\\PersonaxRol.cs",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\PersonaxRol.cs",
-              "RelativeToolTip": "Models\\PersonaxRol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T08:00:50.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GymTECDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Data\\GymTECDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\GymTECDbContext.cs",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Data\\GymTECDbContext.cs",
-              "RelativeToolTip": "Data\\GymTECDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T07:58:50.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\LoginResponse.cs",
-              "RelativeDocumentMoniker": "DTOs\\LoginResponse.cs",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\LoginResponse.cs",
-              "RelativeToolTip": "DTOs\\LoginResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T07:52:45.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "DTOs\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\LoginRequest.cs",
-              "RelativeToolTip": "DTOs\\LoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T07:51:52.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Persona.cs",
-              "RelativeDocumentMoniker": "Models\\Persona.cs",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Persona.cs",
-              "RelativeToolTip": "Models\\Persona.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T07:46:30.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AutentificacionController.cs",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\AutentificacionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AutentificacionController.cs",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\AutentificacionController.cs",
-              "RelativeToolTip": "Controllers\\AutentificacionController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEUAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T07:43:11.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "main.jsx",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\src\\main.jsx",
-              "RelativeDocumentMoniker": "..\\GymTEC.APP\\src\\main.jsx",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\src\\main.jsx",
-              "RelativeToolTip": "..\\GymTEC.APP\\src\\main.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-06-19T06:53:40.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "index.css",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\src\\index.css",
-              "RelativeDocumentMoniker": "..\\GymTEC.APP\\src\\index.css",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\src\\index.css",
-              "RelativeToolTip": "..\\GymTEC.APP\\src\\index.css",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-19T06:53:13.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "App.css",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\src\\App.css",
-              "RelativeDocumentMoniker": "..\\GymTEC.APP\\src\\App.css",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\src\\App.css",
-              "RelativeToolTip": "..\\GymTEC.APP\\src\\App.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-19T06:53:07.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "react.svg",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\src\\assets\\react.svg",
-              "RelativeDocumentMoniker": "..\\GymTEC.APP\\src\\assets\\react.svg",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\src\\assets\\react.svg",
-              "RelativeToolTip": "..\\GymTEC.APP\\src\\assets\\react.svg",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKMSURBVDhPjZNLSFRhFMd/3507M/dKPsacsYelWGZZFFJRkdSmNrUoatMiKggSN2YFEUX3MvQiiBYWtFAyggoXPSGyhQuhFrXQFr7GMFOowcZMUO9MM3pPi9Eao6gf/Bcfh3PO/5yPo8jAsqxI5vtvKKXuhMPhK4jInIBlWRH5Bw0NDYOWZUVs264B0DILKEUXCCIpZOIi7uetpHpCxN8GiffU4rrThEIhXzgcXiEidbZtH/5ZQKTV\u002B72oItjSYfG5vxwneoX2/iW80dvxb4ji9D4BIBAIeBsbG4fSOXJWzSR7qpt9D\u002BvWndpTlNXL2HCQ28PXaIuVEB2Dmsp8DiZqyN35FAFiw19IJpPcbmrq0wCq7\u002BvHd5Y\u002B2rMy5y3OcBXmqtccq9rB/uUFKI/GzfZRPhRdBhEQIRgKUlxSAoAm0uqtWNB5Yu\u002Bier5\u002BWOoWbnxAwAwQzDao3lLIobX5ePxemiImroCIzFm\u002BztT7/CPLzi8ej\u002BVxdeyu1nJjgMR3FwDl0fD4dJRHozuWACStjM/TGDlZ50tNqHuxejo\u002B\u002BZPL8wwqCvxUFPhZFfBSbIBMJti0wJjpDpJRQXfjzr6uj9u\u002BtYysCWijA4OPqzeXpVLJtE010zS9cZDM1DTa9ASLmoaOnh4cEYaySsoa30T5Mp5kPD7Ni\u002B5Rtt7qofzqO553jqQHmHExi5p8RcRNsb6y7VWtnm1ecjUdcdM7QClwhQPl8zi3o\u002BiXdREMMwvbtvv0KYfmRJSBtvlVY93O6ujLlc8WdsYcdE1RmutlV3kO20tzcXFRohBFerQ/ccE6c11EJB53xIk7EndmNSnObxIRsSwrMucWUvh2AxiGiWmYGOassjB/0yxzzPzvOWfyAyvlXYiiBFoWAAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-06-19T06:39:30.356Z",
+              "WhenOpened": "2025-06-20T09:52:38.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PersonasController.cs",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\PersonasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PersonasController.cs",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\PersonasController.cs",
-              "RelativeToolTip": "Controllers\\PersonasController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "Title": "Administrador.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Administrador.cs",
+              "RelativeDocumentMoniker": "Models\\Administrador.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Administrador.cs",
+              "RelativeToolTip": "Models\\Administrador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T03:42:11.938Z",
+              "WhenOpened": "2025-06-20T05:55:08.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Cliente.cs",
+              "RelativeToolTip": "Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:38:44.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Persona.cs",
+              "RelativeDocumentMoniker": "Models\\Persona.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Persona.cs",
+              "RelativeToolTip": "Models\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:36:40.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PersonaxRol.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\PersonaxRol.cs",
+              "RelativeDocumentMoniker": "Models\\PersonaxRol.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\PersonaxRol.cs",
+              "RelativeToolTip": "Models\\PersonaxRol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:41:06.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sucursal.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Sucursal.cs",
+              "RelativeDocumentMoniker": "Models\\Sucursal.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Models\\Sucursal.cs",
+              "RelativeToolTip": "Models\\Sucursal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:40:39.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SucursalesController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\SucursalesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SucursalesController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\SucursalesController.cs",
+              "RelativeToolTip": "Controllers\\SucursalesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:38:09.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GymTECDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Data\\GymTECDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\GymTECDbContext.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Data\\GymTECDbContext.cs",
+              "RelativeToolTip": "Data\\GymTECDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBQAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:41:56.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistroSucursalRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\RegistroSucursalRequest.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegistroSucursalRequest.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\RegistroSucursalRequest.cs",
+              "RelativeToolTip": "DTOs\\RegistroSucursalRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:43:33.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistroSucursalController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\RegistroSucursalController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegistroSucursalController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\RegistroSucursalController.cs",
+              "RelativeToolTip": "Controllers\\RegistroSucursalController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:44:06.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GymTECDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\GymTECDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\GymTECDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\GymTECDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\GymTECDbContextModelSnapshot.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:56:18.846Z",
               "EditorCaption": ""
             },
             {
@@ -231,7 +286,241 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegistroClienteRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\RegistroClienteRequest.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegistroClienteRequest.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\RegistroClienteRequest.cs",
+              "RelativeToolTip": "DTOs\\RegistroClienteRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:53:04.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegistroAdministradorRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\RegistroAdministradorRequest.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegistroAdministradorRequest.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\RegistroAdministradorRequest.cs",
+              "RelativeToolTip": "DTOs\\RegistroAdministradorRequest.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA2wCAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:31:31.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\LoginResponse.cs",
+              "RelativeToolTip": "DTOs\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:34:32.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\DTOs\\LoginRequest.cs",
+              "RelativeToolTip": "DTOs\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:34:39.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "Controllers\\RolesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:52:30.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RegistroClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\RegistroClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegistroClienteController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\RegistroClienteController.cs",
+              "RelativeToolTip": "Controllers\\RegistroClienteController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:55:08.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RegistroAdministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\RegistroAdministradorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegistroAdministradorController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\RegistroAdministradorController.cs",
+              "RelativeToolTip": "Controllers\\RegistroAdministradorController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:41:00.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PersonasxRolesController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\PersonasxRolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PersonasxRolesController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\PersonasxRolesController.cs",
+              "RelativeToolTip": "Controllers\\PersonasxRolesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:52:28.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PersonasController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\PersonasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PersonasController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\PersonasController.cs",
+              "RelativeToolTip": "Controllers\\PersonasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:52:27.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AutentificacionController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\AutentificacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AutentificacionController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\AutentificacionController.cs",
+              "RelativeToolTip": "Controllers\\AutentificacionController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:43:11.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdministradoresController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\AdministradoresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdministradoresController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\AdministradoresController.cs",
+              "RelativeToolTip": "Controllers\\AdministradoresController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwA4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:38:47.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:51:39.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-20T07:53:42.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-20T07:53:47.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-20T07:53:54.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20250620074243_TablaAdminv2.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\20250620074243_TablaAdminv2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250620074243_TablaAdminv2.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\20250620074243_TablaAdminv2.cs",
+              "RelativeToolTip": "Migrations\\20250620074243_TablaAdminv2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:42:43.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20250620062546_TablaAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\20250620062546_TablaAdmin.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250620062546_TablaAdmin.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\20250620062546_TablaAdmin.cs",
+              "RelativeToolTip": "Migrations\\20250620062546_TablaAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:25:46.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20250620063205_TablaAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\20250620063205_TablaAdmin.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250620063205_TablaAdmin.cs",
+              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\20250620063205_TablaAdmin.cs",
+              "RelativeToolTip": "Migrations\\20250620063205_TablaAdmin.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:32:05.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "launch.json",
               "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\.vscode\\launch.json",
               "RelativeDocumentMoniker": "..\\GymTEC.APP\\.vscode\\launch.json",
@@ -239,12 +528,11 @@
               "RelativeToolTip": "..\\GymTEC.APP\\.vscode\\launch.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-19T04:23:10.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T04:23:10.659Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 29,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\src\\App.jsx",
               "RelativeDocumentMoniker": "..\\GymTEC.APP\\src\\App.jsx",
@@ -252,25 +540,11 @@
               "RelativeToolTip": "..\\GymTEC.APP\\src\\App.jsx",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAwEoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-06-19T03:46:36.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T03:46:36.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GymTECDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\GymTECDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\GymTECDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.API\\Migrations\\GymTECDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\GymTECDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T03:43:15.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 30,
               "Title": ".env",
               "DocumentMoniker": "C:\\Users\\Yonathan Monge\\Desktop\\Proyectos programaci\u00F3n\\GymTEC\\GymTEC.APP\\.env",
               "RelativeDocumentMoniker": "..\\GymTEC.APP\\.env",
@@ -278,8 +552,7 @@
               "RelativeToolTip": "..\\GymTEC.APP\\.env",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-19T02:14:59.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T02:14:59.464Z"
             }
           ]
         }

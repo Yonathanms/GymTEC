@@ -1,5 +1,114 @@
 [
   {
+    "ContainingType": "GymTEC.API.Controllers.AdministradoresController",
+    "Method": "GetAdministrador",
+    "RelativePath": "api/Administradores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GymTEC.API.Models.Administrador, GymTEC.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.AdministradoresController",
+    "Method": "PostAdministrador",
+    "RelativePath": "api/Administradores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "administrador",
+        "Type": "GymTEC.API.Models.Administrador",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymTEC.API.Models.Administrador",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.AdministradoresController",
+    "Method": "GetAdministrador",
+    "RelativePath": "api/Administradores/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymTEC.API.Models.Administrador",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.AdministradoresController",
+    "Method": "PutAdministrador",
+    "RelativePath": "api/Administradores/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "administrador",
+        "Type": "GymTEC.API.Models.Administrador",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.AdministradoresController",
+    "Method": "DeleteAdministrador",
+    "RelativePath": "api/Administradores/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GymTEC.API.Controllers.AutentificacionController",
     "Method": "Login",
     "RelativePath": "api/Autentificacion/Login",
@@ -24,115 +133,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "GymTEC.API.Controllers.BranchesController",
-    "Method": "GetBranches",
-    "RelativePath": "api/Branches",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[GymTEC.API.Models.Branch, GymTEC.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "GymTEC.API.Controllers.BranchesController",
-    "Method": "PostBranch",
-    "RelativePath": "api/Branches",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "branch",
-        "Type": "GymTEC.API.Models.Branch",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "GymTEC.API.Models.Branch",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "GymTEC.API.Controllers.BranchesController",
-    "Method": "GetBranch",
-    "RelativePath": "api/Branches/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "GymTEC.API.Models.Branch",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "GymTEC.API.Controllers.BranchesController",
-    "Method": "PutBranch",
-    "RelativePath": "api/Branches/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "branch",
-        "Type": "GymTEC.API.Models.Branch",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "GymTEC.API.Controllers.BranchesController",
-    "Method": "DeleteBranch",
-    "RelativePath": "api/Branches/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "GymTEC.API.Controllers.ClientesController",
@@ -462,6 +462,54 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "GymTEC.API.Controllers.RegistroAdministradorController",
+    "Method": "RegistrarAdministrador",
+    "RelativePath": "api/RegistroAdministrador",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymTEC.API.DTOs.RegistroAdministradorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.RegistroClienteController",
+    "Method": "RegistrarCliente",
+    "RelativePath": "api/RegistroCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymTEC.API.DTOs.RegistroClienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.RegistroSucursalController",
+    "Method": "RegistrarSucursal",
+    "RelativePath": "api/RegistroSucursal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymTEC.API.DTOs.RegistroSucursalRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GymTEC.API.Controllers.RolesController",
     "Method": "GetRoles",
     "RelativePath": "api/Roles",
@@ -558,6 +606,115 @@
     "ContainingType": "GymTEC.API.Controllers.RolesController",
     "Method": "DeleteRoles",
     "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.SucursalesController",
+    "Method": "GetBranches",
+    "RelativePath": "api/Sucursales",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GymTEC.API.Models.Sucursal, GymTEC.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.SucursalesController",
+    "Method": "PostSucursal",
+    "RelativePath": "api/Sucursales",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sucursal",
+        "Type": "GymTEC.API.Models.Sucursal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymTEC.API.Models.Sucursal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.SucursalesController",
+    "Method": "GetSucursal",
+    "RelativePath": "api/Sucursales/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymTEC.API.Models.Sucursal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.SucursalesController",
+    "Method": "PutSucursal",
+    "RelativePath": "api/Sucursales/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sucursal",
+        "Type": "GymTEC.API.Models.Sucursal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymTEC.API.Controllers.SucursalesController",
+    "Method": "DeleteSucursal",
+    "RelativePath": "api/Sucursales/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
