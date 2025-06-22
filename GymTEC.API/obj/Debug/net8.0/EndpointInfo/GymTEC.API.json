@@ -41,52 +41,6 @@
             }
           }
         }
-      },
-      "post": {
-        "tags": [
-          "Administradores"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Administrador"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Administrador"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Administrador"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Administrador"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Administrador"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Administrador"
-                }
-              }
-            }
-          }
-        }
       }
     },
     "/api/Administradores/{id}": {
@@ -187,6 +141,37 @@
         }
       }
     },
+    "/api/Administradores/registro": {
+      "post": {
+        "tags": [
+          "Administradores"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAdministradorRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAdministradorRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAdministradorRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Autentificacion/Login": {
       "post": {
         "tags": [
@@ -235,6 +220,37 @@
         }
       }
     },
+    "/api/Clase/crear": {
+      "post": {
+        "tags": [
+          "Clase"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearClaseRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearClaseRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearClaseRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Clientes": {
       "get": {
         "tags": [
@@ -266,52 +282,6 @@
                   "items": {
                     "$ref": "#/components/schemas/Cliente"
                   }
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Clientes"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Cliente"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Cliente"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Cliente"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Cliente"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Cliente"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Cliente"
                 }
               }
             }
@@ -403,6 +373,126 @@
         "parameters": [
           {
             "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Clientes/registro": {
+      "post": {
+        "tags": [
+          "Clientes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroClienteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroClienteRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroClienteRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Empleado": {
+      "get": {
+        "tags": [
+          "Empleado"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpleadoResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpleadoResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpleadoResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Empleado"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpleadoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpleadoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpleadoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Empleado/{cedula}": {
+      "delete": {
+        "tags": [
+          "Empleado"
+        ],
+        "parameters": [
+          {
+            "name": "cedula",
             "in": "path",
             "required": true,
             "schema": {
@@ -781,26 +871,26 @@
         }
       }
     },
-    "/api/RegistroAdministrador": {
+    "/api/Planilla/HorasLaboradas": {
       "post": {
         "tags": [
-          "RegistroAdministrador"
+          "Planilla"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegistroAdministradorRequest"
+                "$ref": "#/components/schemas/AsignarHorasRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegistroAdministradorRequest"
+                "$ref": "#/components/schemas/AsignarHorasRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RegistroAdministradorRequest"
+                "$ref": "#/components/schemas/AsignarHorasRequest"
               }
             }
           }
@@ -812,26 +902,26 @@
         }
       }
     },
-    "/api/RegistroCliente": {
+    "/api/Planilla/asignar-clases": {
       "post": {
         "tags": [
-          "RegistroCliente"
+          "Planilla"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegistroClienteRequest"
+                "$ref": "#/components/schemas/AsignarClasesRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegistroClienteRequest"
+                "$ref": "#/components/schemas/AsignarClasesRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RegistroClienteRequest"
+                "$ref": "#/components/schemas/AsignarClasesRequest"
               }
             }
           }
@@ -843,30 +933,150 @@
         }
       }
     },
-    "/api/RegistroSucursal": {
+    "/api/Planilla/Generar": {
+      "get": {
+        "tags": [
+          "Planilla"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Producto": {
       "post": {
         "tags": [
-          "RegistroSucursal"
+          "Producto"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegistroSucursalRequest"
+                "$ref": "#/components/schemas/ProductoRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegistroSucursalRequest"
+                "$ref": "#/components/schemas/ProductoRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RegistroSucursalRequest"
+                "$ref": "#/components/schemas/ProductoRequest"
               }
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Producto/Asignar": {
+      "post": {
+        "tags": [
+          "Producto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsignarProductoSucursalRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsignarProductoSucursalRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsignarProductoSucursalRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Producto/Desasignar": {
+      "delete": {
+        "tags": [
+          "Producto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsignarProductoSucursalRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsignarProductoSucursalRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsignarProductoSucursalRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Producto/Sucursal/{idSucursal}": {
+      "get": {
+        "tags": [
+          "Producto"
+        ],
+        "parameters": [
+          {
+            "name": "idSucursal",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Producto/NoAsociados/{idSucursal}": {
+      "get": {
+        "tags": [
+          "Producto"
+        ],
+        "parameters": [
+          {
+            "name": "idSucursal",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1104,41 +1314,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Sucursal"
+                "$ref": "#/components/schemas/RegistroSucursalRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Sucursal"
+                "$ref": "#/components/schemas/RegistroSucursalRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Sucursal"
+                "$ref": "#/components/schemas/RegistroSucursalRequest"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Sucursal"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Sucursal"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Sucursal"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -1243,6 +1436,342 @@
           }
         }
       }
+    },
+    "/api/Sucursales/ActivarSpa/{id}": {
+      "put": {
+        "tags": [
+          "Sucursales"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sucursales/ActivarTienda/{id}": {
+      "put": {
+        "tags": [
+          "Sucursales"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tratamientos": {
+      "get": {
+        "tags": [
+          "Tratamientos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TratamientoResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TratamientoResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TratamientoResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Tratamientos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TratamientoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TratamientoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TratamientoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tratamientos/{id}": {
+      "put": {
+        "tags": [
+          "Tratamientos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TratamientoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TratamientoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TratamientoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Tratamientos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TratamientosSucursal/Asociados/{idSucursal}": {
+      "get": {
+        "tags": [
+          "TratamientosSucursal"
+        ],
+        "parameters": [
+          {
+            "name": "idSucursal",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TratamientoSimpleResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TratamientoSimpleResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TratamientoSimpleResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TratamientosSucursal/NoAsociados/{idSucursal}": {
+      "get": {
+        "tags": [
+          "TratamientosSucursal"
+        ],
+        "parameters": [
+          {
+            "name": "idSucursal",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TratamientoSimpleResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TratamientoSimpleResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TratamientoSimpleResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TratamientosSucursal/Asociar": {
+      "post": {
+        "tags": [
+          "TratamientosSucursal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsociarTratamientoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsociarTratamientoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsociarTratamientoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TratamientosSucursal/Desasociar": {
+      "delete": {
+        "tags": [
+          "TratamientosSucursal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsociarTratamientoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsociarTratamientoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsociarTratamientoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1281,6 +1810,62 @@
         },
         "additionalProperties": false
       },
+      "AsignarClasesRequest": {
+        "type": "object",
+        "properties": {
+          "numCedula": {
+            "type": "string",
+            "nullable": true
+          },
+          "cantidadClases": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AsignarHorasRequest": {
+        "type": "object",
+        "properties": {
+          "numCedula": {
+            "type": "string",
+            "nullable": true
+          },
+          "cantidadHoras": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AsignarProductoSucursalRequest": {
+        "type": "object",
+        "properties": {
+          "codigoBarras": {
+            "type": "string",
+            "nullable": true
+          },
+          "idSucursal": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AsociarTratamientoRequest": {
+        "type": "object",
+        "properties": {
+          "idSucursal": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTratamiento": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "Cliente": {
         "required": [
           "imc",
@@ -1302,6 +1887,153 @@
           },
           "persona": {
             "$ref": "#/components/schemas/Persona"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CrearClaseRequest": {
+        "type": "object",
+        "properties": {
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "numCedulaInstructor": {
+            "type": "string",
+            "nullable": true
+          },
+          "esGrupal": {
+            "type": "boolean"
+          },
+          "capacidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "horaInicio": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "horaFinal": {
+            "type": "string",
+            "format": "date-span"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmpleadoRequest": {
+        "type": "object",
+        "properties": {
+          "numCedula": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido1": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido2": {
+            "type": "string",
+            "nullable": true
+          },
+          "provincia": {
+            "type": "string",
+            "nullable": true
+          },
+          "canton": {
+            "type": "string",
+            "nullable": true
+          },
+          "distrito": {
+            "type": "string",
+            "nullable": true
+          },
+          "puestoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSucursal": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tipoPlanillaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "salario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "correoElectronico": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmpleadoResponse": {
+        "type": "object",
+        "properties": {
+          "numCedula": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido1": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido2": {
+            "type": "string",
+            "nullable": true
+          },
+          "provincia": {
+            "type": "string",
+            "nullable": true
+          },
+          "canton": {
+            "type": "string",
+            "nullable": true
+          },
+          "distrito": {
+            "type": "string",
+            "nullable": true
+          },
+          "puestoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSucursal": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tipoPlanillaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "salario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "correoElectronico": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1419,73 +2151,74 @@
         },
         "additionalProperties": false
       },
+      "ProductoRequest": {
+        "type": "object",
+        "properties": {
+          "codigoBarras": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "costo": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "RegistroAdministradorRequest": {
-        "required": [
-          "apellido1",
-          "apellido2",
-          "canton",
-          "correoElectronico",
-          "distrito",
-          "fechaNacimiento",
-          "nombre",
-          "numCedula",
-          "password",
-          "provincia",
-          "salario",
-          "tipoPlanilla"
-        ],
         "type": "object",
         "properties": {
           "numCedula": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "nombre": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "apellido1": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "apellido2": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "fechaNacimiento": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "provincia": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "canton": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "distrito": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "correoElectronico": {
-            "minLength": 1,
             "type": "string",
-            "format": "email"
+            "nullable": true
           },
           "password": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "idSucursal": {
-            "type": "integer",
-            "format": "int32",
+            "type": "string",
             "nullable": true
           },
           "tipoPlanilla": {
-            "minLength": 1,
-            "pattern": "^(Mensual|Xhora|Xclase)$",
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "salario": {
             "type": "integer",
@@ -1515,7 +2248,7 @@
           },
           "fechaNacimiento": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "provincia": {
             "type": "string",
@@ -1549,57 +2282,39 @@
         "additionalProperties": false
       },
       "RegistroSucursalRequest": {
-        "required": [
-          "canton",
-          "distrito",
-          "maxCapacity",
-          "nombreSucursal",
-          "numCedulaAdministrador",
-          "openingDate",
-          "provincia",
-          "spaEnabled",
-          "storeEnabled",
-          "telefono"
-        ],
         "type": "object",
         "properties": {
           "nombreSucursal": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "provincia": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "canton": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "distrito": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "openingDate": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "telefono": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "maxCapacity": {
             "type": "integer",
             "format": "int32"
           },
-          "spaEnabled": {
-            "type": "boolean"
-          },
-          "storeEnabled": {
-            "type": "boolean"
-          },
           "numCedulaAdministrador": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1671,6 +2386,47 @@
           },
           "administrador": {
             "$ref": "#/components/schemas/Administrador"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TratamientoRequest": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TratamientoResponse": {
+        "type": "object",
+        "properties": {
+          "idTratamiento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "esPorDefecto": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TratamientoSimpleResponse": {
+        "type": "object",
+        "properties": {
+          "idTratamiento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

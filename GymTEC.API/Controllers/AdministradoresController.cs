@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GymTEC.API.Data;
 using GymTEC.API.Models;
+using GymTEC.API.DTOs;
+using GymTEC.API.Utils;
+
 
 namespace GymTEC.API.Controllers
 {
@@ -73,30 +76,42 @@ namespace GymTEC.API.Controllers
             return NoContent();
         }
 
-        // POST: api/Administradores
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Administrador>> PostAdministrador(Administrador administrador)
+        [HttpPost("registro")]
+        public async Task<IActionResult> RegistrarAdministrador([FromBody] RegistroAdministradorRequest request)
         {
-            _context.Administrador.Add(administrador);
-            try
+            var persona = new Persona
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (AdministradorExists(administrador.NumCedula))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+                NumCedula = request.NumCedula,
+                Nombre = request.Nombre,
+                Apellido1 = request.Apellido1,
+                Apellido2 = request.Apellido2,
+                FechaNacimiento = DateOnly.FromDateTime(request.FechaNacimiento),
+                Provincia = request.Provincia,
+                Canton = request.Canton,
+                Distrito = request.Distrito,
+                CorreoElectronico = request.CorreoElectronico,
+                Password = Utilidades.EncriptarMD5(request.Password)
+            };
 
-            return CreatedAtAction("GetAdministrador", new { id = administrador.NumCedula }, administrador);
+            var administrador = new Administrador
+            {
+                NumCedula = request.NumCedula,
+                TipoPlanilla = request.TipoPlanilla,
+                Salario = request.Salario
+            };
+
+            _context.Personas.Add(persona);
+            _context.Administrador.Add(administrador);
+            _context.PersonaxRol.Add(new PersonaxRol
+            {
+                NumCedula = request.NumCedula,
+                IdRol = 3 // ID del rol "Administrador"
+            });
+
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Administrador registrado correctamente" });
         }
+
 
         // DELETE: api/Administradores/5
         [HttpDelete("{id}")]

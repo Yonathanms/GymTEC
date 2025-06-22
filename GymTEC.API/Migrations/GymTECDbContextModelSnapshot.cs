@@ -180,7 +180,47 @@ namespace GymTEC.API.Migrations
 
                     b.HasKey("IdSucursal");
 
-                    b.ToTable("Sucursal");
+                    b.ToTable("Sucursal", (string)null);
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.Tratamiento", b =>
+                {
+                    b.Property<int>("IdTratamiento")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("idtratamiento");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdTratamiento"));
+
+                    b.Property<bool>("EsPorDefecto")
+                        .HasColumnType("boolean")
+                        .HasColumnName("espordefecto");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("nombre");
+
+                    b.HasKey("IdTratamiento");
+
+                    b.ToTable("tratamiento");
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.TratamientoSucursal", b =>
+                {
+                    b.Property<int>("IdSucursal")
+                        .HasColumnType("integer")
+                        .HasColumnName("idsucursal");
+
+                    b.Property<int>("IdTratamiento")
+                        .HasColumnType("integer")
+                        .HasColumnName("idtratamiento");
+
+                    b.HasKey("IdSucursal", "IdTratamiento");
+
+                    b.HasIndex("IdTratamiento");
+
+                    b.ToTable("tratamientosucursal");
                 });
 
             modelBuilder.Entity("GymTEC.API.Models.Administrador", b =>
@@ -230,10 +270,34 @@ namespace GymTEC.API.Migrations
                     b.Navigation("Rol");
                 });
 
+            modelBuilder.Entity("GymTEC.API.Models.TratamientoSucursal", b =>
+                {
+                    b.HasOne("GymTEC.API.Models.Sucursal", "Sucursal")
+                        .WithMany()
+                        .HasForeignKey("IdSucursal")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GymTEC.API.Models.Tratamiento", "Tratamiento")
+                        .WithMany("TratamientosSucursal")
+                        .HasForeignKey("IdTratamiento")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Sucursal");
+
+                    b.Navigation("Tratamiento");
+                });
+
             modelBuilder.Entity("GymTEC.API.Models.Sucursal", b =>
                 {
                     b.Navigation("Administrador")
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("GymTEC.API.Models.Tratamiento", b =>
+                {
+                    b.Navigation("TratamientosSucursal");
                 });
 #pragma warning restore 612, 618
         }

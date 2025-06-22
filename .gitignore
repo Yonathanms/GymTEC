@@ -1,46 +1,39 @@
+## Archivos de compilación
+bin/
+obj/
+out/
 
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/cd5fe97a-7721-4b99-b5d9-0b3055f5fd7d.vsidx
+## Configuración de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/143f2c17-5b01-4e1a-b4a4-6902f966d8fa.vsidx
+## Archivos de dependencia de NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
 
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/1adf444f-96a5-4b61-b504-a1fb02977ff1.vsidx
+## Archivos de log temporales
+*.log
+*.tlog
 
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/9b2503cd-9bb3-4bee-a3e1-70d14f3a25a4.vsidx
+## Archivos generados por VS y Rider
+.vs/
+.idea/
+*.DotSettings.user
 
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/fa8c01dc-4aca-4747-b9a3-1db08b31ff1c.vsidx
+## Sistema operativo
+.DS_Store
+Thumbs.db
 
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/ac6fd649-ec76-46a6-8ac0-5a6790d2e655.vsidx
+## Migraciones generadas
+Migrations/
 
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/203676dc-d87d-4380-953e-ff445e23d0e5.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/34789047-7d24-403c-809d-4c8fcd856829.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/65f612fe-5dc5-4122-a533-89012c90cdbb.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/75d672c0-ac3c-4faf-8677-6d9fb8334807.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/8985fe5d-1321-4b32-bf42-504ef44a3c2c.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/0a642143-c55a-41da-9192-7628bf77327d.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/418b8aa3-bb01-4693-b992-2e3b528bc589.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/6b5aeaff-4c77-40f8-bafe-258e9dd0fe96.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/75a57c46-ae3c-4f72-a0d4-259a354d3902.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/b2781a26-d764-4975-a9cf-ad5beaf5291a.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/16b31c23-49d5-4d9f-8f7d-7a517365d2d9.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/1d4dda39-303b-44ec-9589-bbed4f10358f.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/3160fb22-8191-4ab9-8ba6-5b175b1ab41c.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/59b11262-4389-4153-930f-33a9ea47f423.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/189f68be-7b6c-49ab-b584-a760cf87047e.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/dcfcc3de-7ec4-4e41-97ff-6f5f22216e8f.vsidx
-
-GymTEC.API/.vs/GymTEC.API/FileContentIndex/e48ad688-b288-4533-9e38-011210134aed.vsidx
+## Otros
+*.swp
+*.bak
+*.tmp

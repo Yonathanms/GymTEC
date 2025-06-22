@@ -19,9 +19,31 @@ namespace GymTEC.API.Data
         public DbSet<Cliente> Cliente { get; set; } = default!;
         public DbSet<PersonaxRol> PersonaxRol { get; set; } = default!;
         public DbSet<Administrador> Administrador { get; set; } = default!;
+        public DbSet<Tratamiento> Tratamientos { get; set; }
+        public DbSet<TratamientoSucursal> TratamientosSucursal { get; set; }
+        public DbSet<Empleado> Empleados { get; set; }
+        public DbSet<Producto> Producto { get; set; }
+        public DbSet<ProductoSucursal> ProductoSucursal { get; set; }
+        public DbSet<HorasLaboradas> HorasLaboradas { get; set; }
+        public DbSet<ClasesImpartidas> ClasesImpartidas { get; set; }
+        public DbSet<PlanillaResultado> PlanillaResultado { get; set; }
+        public DbSet<Clase> Clases { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<HorasLaboradas>().HasNoKey();
+            modelBuilder.Entity<ClasesImpartidas>().HasNoKey(); // si aplica
+
+
+            modelBuilder.Entity<PlanillaResultado>().HasNoKey();
+
+            modelBuilder.Entity<TratamientoSucursal>()
+                .HasKey(ts => new { ts.IdSucursal, ts.IdTratamiento });
+
+
             // Mapear la entidad Sucursal a la tabla "sucursal"
             modelBuilder.Entity<Sucursal>().ToTable("Sucursal");
 

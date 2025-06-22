@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GymTEC.API.Data;
 using GymTEC.API.Models;
+using GymTEC.API.DTOs;
+using GymTEC.API.Utils;
 
 namespace GymTEC.API.Controllers
 {
@@ -75,28 +77,40 @@ namespace GymTEC.API.Controllers
 
         // POST: api/Clientes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Cliente>> PostCliente(Cliente cliente)
+        [HttpPost("registro")]
+        public async Task<IActionResult> RegistrarCliente([FromBody] RegistroClienteRequest request)
         {
-            _context.Cliente.Add(cliente);
-            try
+            var persona = new Persona
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (ClienteExists(cliente.NumCedula))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+                NumCedula = request.NumCedula,
+                Nombre = request.Nombre,
+                Apellido1 = request.Apellido1,
+                Apellido2 = request.Apellido2,
+                FechaNacimiento = request.FechaNacimiento.ToDateOnly(),
+                Provincia = request.Provincia,
+                Canton = request.Canton,
+                Distrito = request.Distrito,
+                CorreoElectronico = request.CorreoElectronico,
+                Password = Utilidades.EncriptarMD5(request.Password)
+            };
 
-            return CreatedAtAction("GetCliente", new { id = cliente.NumCedula }, cliente);
+            var cliente = new Cliente
+            {
+                NumCedula = request.NumCedula
+            };
+
+            _context.Personas.Add(persona);
+            _context.Cliente.Add(cliente);
+            _context.PersonaxRol.Add(new PersonaxRol
+            {
+                NumCedula = request.NumCedula,
+                IdRol = 1 // ID del rol "Cliente"
+            });
+
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Cliente registrado correctamente" });
         }
+
 
         // DELETE: api/Clientes/5
         [HttpDelete("{id}")]
